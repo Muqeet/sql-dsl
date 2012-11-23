@@ -4,3 +4,5 @@ val query = select ~ all ~ from ~ User ~ where ~ User.id ~ equal ~ X ~ and ~ Use
 
 calling query.sql generates the prepared statement SELECT * FROM USER WHERE USER.NAME = ? AND USER.PASSWORD = ?
 
+check tests for more examples ;)
+
