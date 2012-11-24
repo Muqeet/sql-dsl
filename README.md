@@ -1,4 +1,4 @@
-Scala dsl for SQL generation
+Scala DSL for SQL generation
 
 <pre>
 scala> println {
