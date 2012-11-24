@@ -1,8 +1,11 @@
-scala dsl for sql generation
+Scala dsl for SQL generation
 
-val query = select ~ all ~ from ~ User ~ where ~ User.id ~ equal ~ X ~ and ~ User.pass ~ equal ~ X
-
-calling query.sql generates the prepared statement SELECT * FROM USER WHERE USER.NAME = ? AND USER.PASSWORD = ?
+<pre>
+scala> println {
+     | select ~ all ~ from ~ User ~ where ~ User.id ~ equal ~ X ~ and ~ User.pass ~ equal ~ X
+     | }
+SELECT * FROM USER WHERE USER.NAME = ? AND USER.PASSWORD = ?
+</pre>
 
 check tests for more examples ;)
 
